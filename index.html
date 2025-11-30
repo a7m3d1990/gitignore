@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>صفر أثر - Sifr Athar Browser</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { background: linear-gradient(135deg, #0f172a, #1e293b); color: #00ff9d; min-height: 100vh; }
+    .glass { background: rgba(255,255,255,0.05); backdrop-filter: blur(10px); border: 1px solid rgba(0,255,150,0.2); }
+  </style>
+</head>
+<body class="flex items-center justify-center">
+  <div class="glass p-12 rounded-3xl shadow-2xl text-center">
+    <h1 class="text-6xl font-bold mb-6">صفر أثر</h1>
+    <p class="text-2xl mb-10">أقوى متصفح خصوصية عربي 2026</p>
+    <p class="text-xl mb-4">النسخة الأونلاين تعمل بنجاح!</p>
+    <button onclick="test()" class="px-12 py-5 text-xl rounded-xl bg-gradient-to-r from-green-500 to-emerald-600 hover:scale-110 transition">
+      اختبار الاتصال
+    </button>
+    <p id="result" class="mt-8 text-2xl font-bold"></p>
+  </div>
+
+  <script>
+    window.test = () => {
+      document.getElementById("result").innerText = "مرحبا أحمد! صفر أثر شغال أونلاين بنجاح 🚀";
+    };
+  </script>
+</body>
+</html>
